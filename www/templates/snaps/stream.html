@@ -1,11 +1,11 @@
-<ion-header-bar class="bar-positive">
+<ion-header-bar align-title="left" class="bar-positive">
   <h1 class="title">Snaps!</h1>
   <div class="buttons">
     <button ng-click="takePicture()"  class="button icon-left ion-android-camera button-positive">
     </button>
   </div>
 </ion-header-bar>
-<ion-content class="padding">
+<ion-content>
   <div class="padding loading-wrapper" ng-show="isLoading">
     <i class="icon ion-loading-c loading-spinner"></i>
   </div>
@@ -18,7 +18,5 @@
         {{formattedDate(snap.created)}}
       </div>
     </div>
-
   </div>
-  <br/><br/>
 </ion-content>

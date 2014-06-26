@@ -7,4 +7,38 @@
 
 .loading-wrapper {
   text-align: center;
+  padding-top: 20px;
+}
+
+@media all and (min-width: 600px) {
+  .card {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+
+  .list {
+    padding-top: 25px;
+  }
+}
+
+.bar-header {
+  height: 54px;
+}
+
+.list {
+  text-align: center;
+}
+
+.bar-header .title {
+  line-height: 54px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.bar-header .button {
+  border: none;
 }
