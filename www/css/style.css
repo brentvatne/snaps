@@ -7,7 +7,7 @@
 
 .loading-wrapper {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 @media all and (min-width: 600px) {
@@ -41,4 +41,13 @@
 
 .bar-header .button {
   border: none;
+  font-size: 20px;
+}
+
+.bar .button.button-icon:before, .bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
+  font-size: 25px;
+}
+
+.platform-browser .camera-button {
+  display: none;
 }

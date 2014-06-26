@@ -37,7 +37,8 @@ angular.module('snap.controllers')
           $ionicLoading.hide();
         });
     }, function(err) {
-      $cordovaDialogs.alert("Uh that failed for some reason.")
+      // If you cancel or there is an error for some reason,
+      // it goes here.
     });
   }
 });
