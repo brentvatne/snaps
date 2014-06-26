@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+
+.loading-spinner {
+  font-size: 30px;
+  color: #ccc;
+}
+
+.loading-wrapper {
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+<ion-header-bar class="bar-positive">
+  <h1 class="title">Snaps!</h1>
+  <div class="buttons">
+    <button ng-click="takePicture()"  class="button icon-left ion-android-camera button-positive">
+    </button>
+  </div>
+</ion-header-bar>
+<ion-content class="padding">
+  <div class="padding loading-wrapper" ng-show="isLoading">
+    <i class="icon ion-loading-c loading-spinner"></i>
+  </div>
+
+  <div class="list">
+    <div class="card item item-image slide-in-left" ng-repeat="snap in snaps | orderByPriority | orderBy:'-created'">
+      <img ng-src="data:image/jpeg;base64,{{snap.data}}" />
+
+      <div class="padding">
+        {{formattedDate(snap.created)}}
+      </div>
+    </div>
+
+  </div>
+  <br/><br/>
+</ion-content>

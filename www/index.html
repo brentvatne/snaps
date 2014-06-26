@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Snaps!</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-delay/build/angular-delay.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/angularfire/angularfire.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="js/modules.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/strftime.js"></script>
+    <script src="js/controllers/app_ctrl.js"></script>
+    <script src="js/controllers/snaps_ctrl.js"></script>
+  </head>
+
+  <body ng-app="snap">
+    <div ng-controller="AppCtrl" class="app-wrapper">
+      <ui-view/>
+    </div>
+  </body>
+</html>
